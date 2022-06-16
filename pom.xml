@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>majoolwip</groupId>
+  <artifactId>config-files</artifactId>
+  <version>1.0</version>
+  <name>Maven Config Files</name>
+  <description>Contains config files, such as formatting, for maven projects.</description>
+  <properties>
+    <build.source.Encoding>UTF-8</build.source.Encoding>
+  </properties>
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}</directory>
+        <includes>
+          <include>eclipse-format.xml</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>com.github.ekryd.sortpom</groupId>
+        <artifactId>sortpom-maven-plugin</artifactId>
+        <version>3.1.3</version>
+        <configuration>
+          <createBackupFile>false</createBackupFile>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
