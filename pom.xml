@@ -7,7 +7,7 @@
     <version>1.0.2</version>
   </parent>
   <artifactId>config-files</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <name>Maven Config Files</name>
   <description>Contains config files, such as formatting, for maven projects.</description>
   <build>
