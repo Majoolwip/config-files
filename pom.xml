@@ -4,12 +4,15 @@
   <parent>
     <groupId>majoolwip</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
   </parent>
   <artifactId>config-files</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <name>Maven Config Files</name>
   <description>Contains config files, such as formatting, for maven projects.</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
     <resources>
       <resource>
